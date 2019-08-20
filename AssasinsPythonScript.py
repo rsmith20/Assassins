@@ -9,12 +9,9 @@ from random import shuffle
 
 def getWordsTuple(file, col=0, lowerbound=0, upperbound=None):
 	words = []
-	n = 0
 	with open(file) as f:
 		wordreader = csv.reader(f, delimiter = ',')
 		for row in wordreader:
-			print (str(n) + " was a success.\n")
-			n += 1
 			words.append(row[col].strip())
 	words = words[lowerbound : upperbound] if upperbound != None else words[lowerbound:]
 	return words
