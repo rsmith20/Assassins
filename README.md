@@ -16,14 +16,14 @@ The smaller script will give a single word.
 Both have internal details that should probably be modifiable via command line arguments,
 but until then you'll have to modify code to make changes. To use, simply type 
 
+```
 python AssasinsScript.py
+```
 
-for the initial setup
-
-and 
-
+for the initial setup and 
+```
 python SingleWord.py
-
+```
 for a single word.
 
 
